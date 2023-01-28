@@ -22,10 +22,6 @@ variable "private_subnet_2" {
     default = "10.0.4.0/24"
 }
 
-variable "log-bucket-name" {    
-    default = "terraform-assignment-log-bucket-1"
-}
-
 variable "public_key_path" {
     default = "./ssh-key.pub"
 }
