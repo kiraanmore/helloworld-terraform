@@ -23,7 +23,6 @@ module "compute" {
     source = "../../modules/compute"
     public_key_path = var.public_key_path
     instance_type = var.instance_type
-    log-bucket-name = var.log-bucket-name
     vpc-id = module.network.vpc-id
     public-subnet-1-id = module.network.public-subnet-1-id
     public-subnet-2-id = module.network.public-subnet-2-id

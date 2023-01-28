@@ -20,12 +20,6 @@ resource "aws_lb" "alb" {
   security_groups    = [var.lb-sg-id]
   subnets            = [var.public-subnet-1-id, var.public-subnet-2-id]
 
-  access_logs {
-    bucket  = var.log-bucket-name
-    prefix  = "alb-logs"
-    enabled = true
-  }
-
   tags = {
     Name = "Webserver-alb"
   }
