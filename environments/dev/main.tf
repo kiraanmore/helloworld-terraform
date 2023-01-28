@@ -35,3 +35,7 @@ module "compute" {
     webserver-sg-id = module.network.webserver-sg-id
     bastion-sg-id = module.network.bastion-sg-id
 }
+
+output "load-balancer-endpoint" {
+        value = module.compute.load-balancer-endpoint
+}
