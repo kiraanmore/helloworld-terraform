@@ -1,7 +1,9 @@
 provider "aws" {
     region = "${var.aws_region}"
-    tags = {
-        Environment = var.environment
+    default_tags {
+        tags = {
+            Environment = var.environment
+        }
     }
 }
 
