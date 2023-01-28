@@ -1,5 +1,8 @@
 provider "aws" {
     region = "${var.aws_region}"
+    tags = {
+        Environment = var.environment
+    }
 }
 
 terraform {
