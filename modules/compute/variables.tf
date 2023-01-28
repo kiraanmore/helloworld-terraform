@@ -6,10 +6,6 @@ variable "public_key_path" {
     type = string
 }
 
-variable "log-bucket-name" {
-    type = string
-}
-
 variable "vpc-id" {
     type = string
 }
